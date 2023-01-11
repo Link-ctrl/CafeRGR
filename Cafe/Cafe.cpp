@@ -48,8 +48,12 @@ class Meal                           // класс Заказ
 
 int main()
 {
+    setlocale(0, "");
+    
     Meal bread;
     bread.createMeal();
     bread.getMeal(0);
+
+    return 0;
 }
 
