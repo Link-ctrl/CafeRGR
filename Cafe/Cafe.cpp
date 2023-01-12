@@ -326,11 +326,31 @@ class Cafe          // класс Кафе
 int main()
 {
     setlocale(0, "");
-    
 
+    char choice = '0';
+    Cafe demo;
+    string a;
 
-    
+    while (choice != '2')
+    {
+        system("cls");
+        cout << endl << "Выберите, что вы хотите сделать: " << endl;
+        cout << "_________________________________________" << endl
+            << "1. Cделать заказ " << endl
+            << "2. Выйти из программы" << endl
+            << "_____________________________";
+        cout << endl << "Ваш выбор: "; cin >> choice;
+        getline(cin, a, '\n');
+
+        switch (choice)
+        {
+        case '1':
+            demo.menu();
+            break;
+        }
+    }
+
+    demo.write_to_file();
 
     return 0;
 }
-
